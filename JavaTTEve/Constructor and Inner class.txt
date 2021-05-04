@@ -1,0 +1,31 @@
+class Triangle
+{
+	public double ba, hi;
+	public Triangle() //This is constructor
+	{
+		ba = 7;
+		hi = 5;
+	}
+	
+	public double Area(double b, double h)
+	{
+		double a = 0.5 * b * h;
+		return a;
+	}
+	
+	public static void main(String[] args)
+	{
+		Triangle t; // Declare object
+		t = new Triangle(); // Initialize object
+		System.out.println("Area of Triangle is " + t.Area(7,9));
+	}
+	
+	class FourAngle // This is Inner class
+	{
+		public Message() //This is constructor
+		{
+			System.out.println("This is inner class");
+		}
+	}
+
+}

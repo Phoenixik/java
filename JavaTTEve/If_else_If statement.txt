@@ -1,0 +1,23 @@
+if ...
+
+if ... else ....
+
+if ... else if...else
+
+
+if (tp <= 50000)
+{
+	discount = 5/100 * tp;
+}
+else if( tp > 50000 && tp <= 100000)
+{
+	discount = 10/100 * tp;	
+}
+else if ( tp > 100000 && tp <= 150000)
+{
+	discount = 15/100 * tp;	
+}
+else
+{
+	discount = 20/100 * tp;	
+}

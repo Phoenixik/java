@@ -1,0 +1,64 @@
+class MyJewel
+{
+	variables
+
+	methods
+
+	constructor
+
+	properties / indexer
+}
+
+class MyMoon
+{
+	member variables
+
+	methods
+
+	constructor
+
+	properties / indexer
+}
+
+#####################
+#      Main Menu    #
+#####################
+1. Area of Circle
+2. Area of Triangle
+3. Area of Rectangle
+4. Exit
+
+Enter your choice from 1-4
+
+
+Write a program to accept and display the Tennis Player Information such as 
+Name of Tennis Player
+Country of Origin
+Rank Number
+
+define variables to use
+string name, 
+string country
+int num, number, rn, nu,rank
+
+define method name for accept and display information
+input()
+output()
+
+
+Assignment
+============
+Write a program to accept and display the Student Jamb Exam Information such as 
+Student Name
+Email
+English Score
+Math Score
+Computer Score
+
+
+
+
+
+
+
+

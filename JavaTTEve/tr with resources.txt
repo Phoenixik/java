@@ -1,0 +1,13 @@
+try( [resource-declaration 1];
+[resource-declaration n];
+)
+ 
+{
+//code to be executed
+}
+//after the try block, the resource is closed
+The following code snippet shows how to implement the try-with-resource statement:
+try (BufferedReader br = new BufferedReader(new FileReader("<file_path>")))
+{
+	return br.readLine();
+}

@@ -1,0 +1,93 @@
+ Problem Statement:
+
+ In the Hangman game, when a user decides to play the Hangman game, the numbers of dashes or blanks that are equal to the length of a word are displayed. To implement this, Peter needs to store a group of words, randomly pick a word, calculate the length of the word, and finally displays the number of dashes or blanks. In addition, he wants to implement the functionality that takes an alphabetical character as an input from the user, check if the character entered by the user exists in the corresponding word, and display the letter in the appropriate dashes. However, if the character doesn’t exist in the word, it is added to the list of missed letters. Help Peter to achieve the preceding requirement.
+
+
+Solution
+To achieve the preceding requirement, Peter needs to perform the following steps:
+1.	Ensure that the HangmanGame Java application is open and active.
+2.	Ensure that the Hangman.java file in the game package is open.
+3.	Open the Activity3.2.txt file.
+4.	Replace the code in the Hangman.java file with the code in the Activity3.2.txt file.
+5.	Replace the statement after the comment, // Instance variable, with the following code snippet, in the Hangman.java file:
+
+String word[] = {"japan", "qatar", "syria", "mongolia", "bahrain", "india"};
+
+6.	Add the following code snippet after the comment, // import statements:
+
+import java.util.Random;
+
+7.	Replace the code after the comment, //playGame functionality, within the playGame() method in the Hangman.java file:
+       
+int len, i, count = 0, rnd, flag =0;
+String choice, temp;
+        
+Random rd = new Random();
+Scanner input = new Scanner(System.in);
+        
+rnd = rd.nextInt(6); /* generates a random number between -1 and 7 and          assigns the same to the variable rnd */
+
+len = word[rnd].length();
+char[] newString = new char[len];
+        
+
+StringBuffer wrgString = new StringBuffer();
+        
+ for(int j = 0; j < len; j++) 
+ {
+      System.out.print("_ ");
+ }
+ 
+ System.out.println();
+	
+        do
+        {
+            flag =0;
+            
+            System.out.print("\n\nEnter your guess: ");
+            String ch = input.nextLine().toLowerCase();
+	    
+            count++;
+            
+            for (i = 0; i < len; i++) 
+            {
+                if (word[rnd].charAt(i) == ch.charAt(0))
+                {
+                    newString[i] = word[rnd].charAt(i);
+                    flag = 1;
+		}
+	    }
+	
+            if (flag == 0) 
+            {
+		flag=1;
+                wrgString.append(ch + ",");
+		System.out.println("\nMisses: " + wrgString);
+            }
+                    
+            System.out.println(newString);
+            temp = new String(newString);
+            
+            if (word[rnd].equals(temp)) 
+            {
+		System.out.println("---------- Congrats :) You won ------------");
+		System.out.println("Do you want to play again (Y/N)");
+		choice = input.nextLine();
+	
+                if (choice.equalsIgnoreCase("y")) 
+		{
+			playGame();
+		} 
+		else 
+		{
+			showMenu();
+		}
+                               
+            }
+        }while(flag!=0);
+
+
+The method, int nextInt(int), of java.util.Random class is used generate a random number between -1 and the value passed as argument to the method.
+
+8.	Compile and execute the HangmanGame application.
+

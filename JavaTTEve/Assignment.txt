@@ -1,0 +1,9 @@
+Write a Java program to perform the following operation on two variables
+a. Addition 
+b. Subtraction
+c. Multiplication
+d. Division
+
+NOTE:- Show methods for each operation
+
+2. Write a Java program to compute area of a circle and rectangle

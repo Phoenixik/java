@@ -1,0 +1,80 @@
+a=9
+b=2
+
+
+c1 = a % b
+
+c2 = a / b
+
+b=b+1     //////      b+=1
+v=b+1
+
+\
+
+age < 20
+age >= 20
+age == 20
+age != 20
+
+testsc >= 70 && sex="female"
+testsc >= 70 || sex="female"
+
+a++  result to 10
+
+a-- result to 8
+
++a
+-a
+
+pre unary
+++a		++a -6 	answer is	4	a=10
+--a		--a -6	answer is 	2	a=8
+
+post unary
+
+a--		a++ -6 answer is	 3	a=10
+a++
+
+pay=500
+
+pay >= 500?"good pay":"bad pay"
+pin == 123456? "withdraw money":"access denie"
+
+
+ma
+en
+co
+
+total score
+average score
+
+
+public void Calculate()
+{
+
+
+
+}
+
+
+
+public void Output1()
+{
+Surname		Othername ...... Net Pay
+xxxxxx		xxxxxxx  ........ 99999
+Total Score
+Average Score
+}
+
+public void Output2()
+{
+
+Surname : xxxxxxxx
+Othername:xxxxxxxx
+.
+.
+.
+Net Pay: 99999999
+}
+
+

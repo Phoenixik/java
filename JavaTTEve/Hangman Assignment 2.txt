@@ -1,0 +1,26 @@
+Problem Statement:
+
+Peter wants to display the following menu when the Hangman game starts: 
+1. Play Game
+2. View Instructions
+3. Exit Game
+ Thereafter, he wants a user to enter a choice, such as 1, 2, or 3. In addition, he wants the respective methods, playGame(), instructGame(), or exitGame(), to be invoked according to the user’s input, 1, 2, or 3, respectively. Help Peter to achieve the preceding requirement
+ 
+ 
+ A program, to display even number using for loop
+ 
+ A program to accept any number and check if the number POSITIVE or NEGATIVE.
+ 
+ A program to print out multiplication table of 2 * n = n. Let n be number from 1 to 50
+ Output should be in this format.
+ 
+ 2 * 1 = 2
+ 2 * 2 = 4
+ .
+ .
+ .
+ 2 * 50 = 100
+ 
+ 
+ 
+ 

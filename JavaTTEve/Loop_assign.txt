@@ -1,0 +1,20 @@
+class While_Loop_Ass
+{
+
+	public void  ShowLoop()
+	{
+		int k = 1;
+		while( k < 50 )
+		{
+			System.out.print("i love coding i'm a bad boy );	
+			k++;
+		}
+		//Outside Loop
+		}
+	
+	public static void main(String[] args)
+	{
+		While_Loop  wl = new While_Loop();
+		wl.ShowLoop();
+	}
+}
